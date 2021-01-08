@@ -1,0 +1,106 @@
+#Map-container {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+}
+
+.map-axis-x {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid #fff;
+  width: 0;
+  transition: left 50ms ease-out;
+}
+
+.map-axis-y {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #fff;
+  height: 0;
+  transition: top 50ms ease-out;
+}
+
+/* all the countries */
+.country {
+  stroke: white;
+  stroke-width: 0.10px;
+  fill: #4d5569;
+}
+
+.country:hover{
+  stroke: white;
+  stroke-width: 1px;
+}
+
+.country-on {
+  stroke: white;
+  stroke-width: 0.25px;
+  fill: #879ea8;
+}
+
+.selectedCountry {
+  stroke: white;
+  stroke-width: .50px;
+  fill: #879ea8;
+  cursor: pointer;
+  fill-opacity: 1;
+}
+
+/* all the dots */
+.timezone {
+  fill: red;
+}
+
+.timezone:hover, .timezone-temp{
+  fill:transparent !important;
+  stroke:black;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+.selectedTimezone{
+  fill:transparent !important;
+  stroke: #000;
+  stroke-width: 2px;
+  r:4;
+}
+
+.timezone-on {
+  fill: transparent;
+  stroke: #5582ee;
+  fill-opacity: 1 !important;
+}
+
+.selectPath {
+  fill: black !important;
+  fill-opacity: 1 !important;
+}
+
+
+/* country name print */
+div.Maptooltip {
+  text-align: center;
+  color: #5582ee;
+  font-size: 14px !important;
+  letter-spacing: 0.7px !important;
+  background: transparent;
+  word-break: break-word;
+  white-space: normal;
+  margin-top: 10px;
+  font-weight: bold;
+  line-height: 18px;
+  font-weight: 600 !important;
+  font-family: HelveticaNeue-Light !important;
+}
+
+#time {
+  margin: 10px 10%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  height: 100%;
+  overflow: hidden;
+  background: #F0F8FF;
+}
